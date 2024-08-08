@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://b80vpe6gctabd"]
+
+[ext_resource type="Script" path="res://Main.gd" id="1_iu540"]
+[ext_resource type="PackedScene" uid="uid://owou8ppwv1b3" path="res://Seed.tscn" id="2_3nbyo"]
+[ext_resource type="PackedScene" uid="uid://bkknpcagfk2cf" path="res://Okame.tscn" id="2_msisp"]
+
+[node name="Main" type="Node"]
+script = ExtResource("1_iu540")
+seed_scene = ExtResource("2_3nbyo")
+
+[node name="Okame" parent="." instance=ExtResource("2_msisp")]
+position = Vector2(89, 276)
+
+[node name="SeedTimer" type="Timer" parent="."]
+wait_time = 0.2
+autostart = true
+
+[node name="SeedSpawnPosition" type="Marker2D" parent="."]
+position = Vector2(713, 305)
+
+[connection signal="timeout" from="SeedTimer" to="." method="_on_seed_timer_timeout"]
