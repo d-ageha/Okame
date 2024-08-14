@@ -18,6 +18,14 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
+"texture": ExtResource("3_lesh8")
+}],
+"loop": true,
+"name": &"standing",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": ExtResource("2_av80a")
 }, {
 "duration": 1.0,
@@ -32,19 +40,18 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_00xrc"]
-size = Vector2(17, 81)
+size = Vector2(7, 37)
 
 [node name="Okame" type="StaticBody2D"]
 script = ExtResource("1_epy2j")
 metadata/_edit_group_ = true
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-scale = Vector2(3, 3)
 sprite_frames = SubResource("SpriteFrames_7bjbp")
 animation = &"walking"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(20.5, 4.5)
+position = Vector2(6.5, -1.5)
 shape = SubResource("RectangleShape2D_00xrc")
 debug_color = Color(0.999895, 0, 0.0972324, 0.42)
 
