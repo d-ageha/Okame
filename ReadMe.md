@@ -5,4 +5,4 @@
 ## 試し方
 
 Webビルドしてから、以下のコマンド
-`python3 serve.py --root ./build`
+`python3 serve.py --root <出力されたhtmlがあるディレクトリ>`

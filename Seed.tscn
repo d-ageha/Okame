@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://qt6g0gsytxlr" path="res://images/seed.png" id="1_fd651"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_p8fl3"]
-radius = 4.47214
+radius = 7.07107
 
 [node name="Seed" type="RigidBody2D" groups=["seeds"]]
 collision_mask = 0
@@ -12,7 +12,7 @@ gravity_scale = 0.0
 script = ExtResource("1_a81bt")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-scale = Vector2(0.25, 0.25)
+scale = Vector2(0.5, 0.5)
 texture = ExtResource("1_fd651")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
